@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS (versie 5.3) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Portfolio - Contact</title>
+    <style>
+        /* Achtergrondafbeelding voor de body */
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            background-image: url('../assets/images/background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Zorg ervoor dat de container de hele hoogte vult en de footer onderaan blijft */
+        .content-wrapper {
+            flex: 1 0 auto;
+        }
+
+        /* Donkere semi-transparante achtergrond voor de Contact Informatie sectie */
+        .contact-info-bg {
+            background-color: rgba(23, 23, 23, 0.92);
+            /* Donkerdere achtergrond */
+            padding: 2rem;
+            border-radius: 8px;
+        }
+
+        /* Footer altijd onderaan de pagina */
+        footer {
+            background-color: #171717;
+            color: #e0e0e0;
+            padding: 1rem;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        /* Responsieve marges voor de sectie */
+        @media (max-width: 576px) {
+            .contact-info-bg {
+                padding: 1rem;
+                /* Iets minder padding op kleinere schermen */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="content-wrapper">
+        <!-- Navigatiebalk met Bootstrap: responsief en inklapbaar op mobiel -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Portfolio - Contact</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projecten.html">Projecten</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Over</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Contactinformatie sectie, gecentreerd met een donkere semi-transparante achtergrond en schaduw -->
+        <section class="container my-5 pt-5">
+            <div class="row justify-content-center">
+                <!-- Kolom is 6 breed op grote schermen en past zich aan op kleinere schermen -->
+                <div class="col-lg-6">
+                    <div class="contact-info-bg text-center shadow">
+                        <h2 class="mb-4">Contact Informatie</h2>
+                        <p><strong>Email:</strong> test@gmail.com</p>
+                        <p><strong>Tel:</strong> 0486 66 66 66</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer onderaan de pagina, eenvoudig gecentreerd -->
+    <footer>
+        <p>&copy; 2024 Karol Dachowski | Alle rechten voorbehouden</p>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
